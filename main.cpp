@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "sha256.h"
 using namespace std;
 
-struct block
+class block
 {
-
+public:
     string hash;
     string prevHash;
     string sender;
@@ -92,13 +93,6 @@ public:
 
 int main()
 {
-
-    blockchin b(4);
-    b.addPayment("c", "b", 123);
-    b.addPayment("a", "b", 12);
-    b.addPayment("atha", "bhwe", 69.420);
-    b.addPayment("abgwajg", "bgeragew", 0.343);
-    b.showChain();
 
     return 0;
 }
